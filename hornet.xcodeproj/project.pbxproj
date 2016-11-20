@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		68E2139D1DE2585800AF3C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E2139C1DE2585800AF3C4B /* AppDelegate.swift */; };
-		68E2139F1DE2585800AF3C4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E2139E1DE2585800AF3C4B /* ViewController.swift */; };
-		68E213A21DE2585800AF3C4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68E213A01DE2585800AF3C4B /* Main.storyboard */; };
 		68E213A41DE2585800AF3C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68E213A31DE2585800AF3C4B /* Assets.xcassets */; };
 		68E213A71DE2585800AF3C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68E213A51DE2585800AF3C4B /* LaunchScreen.storyboard */; };
+		68E213AF1DE25A3900AF3C4B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E213AE1DE25A3900AF3C4B /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		68E213991DE2585800AF3C4B /* hornet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hornet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68E2139C1DE2585800AF3C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68E2139E1DE2585800AF3C4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		68E213A11DE2585800AF3C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68E213A31DE2585800AF3C4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68E213A61DE2585800AF3C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68E213A81DE2585800AF3C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68E213AE1DE25A3900AF3C4B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +53,10 @@
 			isa = PBXGroup;
 			children = (
 				68E2139C1DE2585800AF3C4B /* AppDelegate.swift */,
-				68E2139E1DE2585800AF3C4B /* ViewController.swift */,
-				68E213A01DE2585800AF3C4B /* Main.storyboard */,
 				68E213A31DE2585800AF3C4B /* Assets.xcassets */,
 				68E213A51DE2585800AF3C4B /* LaunchScreen.storyboard */,
 				68E213A81DE2585800AF3C4B /* Info.plist */,
+				68E213AE1DE25A3900AF3C4B /* MainViewController.swift */,
 			);
 			path = hornet;
 			sourceTree = "<group>";
@@ -126,7 +123,6 @@
 			files = (
 				68E213A71DE2585800AF3C4B /* LaunchScreen.storyboard in Resources */,
 				68E213A41DE2585800AF3C4B /* Assets.xcassets in Resources */,
-				68E213A21DE2585800AF3C4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,22 +133,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68E2139F1DE2585800AF3C4B /* ViewController.swift in Sources */,
 				68E2139D1DE2585800AF3C4B /* AppDelegate.swift in Sources */,
+				68E213AF1DE25A3900AF3C4B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		68E213A01DE2585800AF3C4B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				68E213A11DE2585800AF3C4B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		68E213A51DE2585800AF3C4B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,6 +249,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PRZU7H23QD;
 				INFOPLIST_FILE = hornet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.miltonandparc.hornet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +263,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PRZU7H23QD;
 				INFOPLIST_FILE = hornet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.miltonandparc.hornet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
